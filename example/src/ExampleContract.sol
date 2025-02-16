@@ -31,7 +31,7 @@ contract ExampleContract is ERC721 {
         }
     }
 
-    /// @notice Returns the token URI for a given token by ID
+    /// @notice Mints the token with given ID
     /// @param tokenId Token ID to mint.
     function mint(uint256 tokenId) external {
         require(!_exists(tokenId), "Token ID is taken");
